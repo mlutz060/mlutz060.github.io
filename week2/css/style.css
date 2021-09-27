@@ -71,12 +71,7 @@ li a {
 
 .divContainer {
     display: grid;
-    grid-template-columns: auto auto auto;
-}
-
-.container {
-    padding: 2px 16px 16px 16px;
-    background-color: wheat;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 p {

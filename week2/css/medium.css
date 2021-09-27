@@ -1,13 +1,10 @@
 
 @media (min-width: 600px) {
-    .dp {
-        grid-template-columns: 1fr 1fr;
+    .divConatiner{
+        grid-template-columns: repeat(3, 1fr);
         gap: 2em;
     }
-    .dp h1 {
-        grid-column: 1/2;
-    }
-    .container {
+    .whitespace {
         grid-column: 2/3;
         grid-row: 1/2;
         margin-bottom: 2em;
