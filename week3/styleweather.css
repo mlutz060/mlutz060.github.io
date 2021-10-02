@@ -4,9 +4,14 @@
 h1{
     font-family: 'Patua one', serif;
     text-align: center;
+    color: #363636;
 }
 h3{
     font-family: 'Patua one', serif;
+}
+body{
+    background-color: #FFF8EB;
+    color: #363636;
 }
 
 nav{
@@ -34,13 +39,14 @@ header{
     background-color: #6B97B3;
     width: 80%;
     margin: 0 auto;
-    opacity: 90%;
+    opacity: 95%;
 }
 main{
     width:80%;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     padding:5px;
+    color:#363636
 }
 .logo{
     padding: 10px;
@@ -51,13 +57,18 @@ main{
     width:25%;
     box-shadow: 5px 5px 10px black;
 }
-
+.colors{
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 footer{
     padding:10px;
     background-color: #6B97B3;
     width: 80%;
     margin: 0 auto;
-    opacity: 90%;
+    opacity: 95%;
     font-family: 'Roboto', sans-serif;
 }
