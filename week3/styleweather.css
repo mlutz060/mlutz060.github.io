@@ -1,0 +1,56 @@
+/*  nuetral #EFEBCE
+    greenish #A3A380
+    blue #3A5683 */
+h1{
+    font-family: 'Patua one', serif;
+    text-align: center;
+}
+
+ul{
+display: flex;
+justify-content: center;
+font-family: 'Robot', sans-serif;
+list-style-type: none;
+}
+
+li{
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+header{
+    background-color: #6B97B3;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 90%;
+}
+main{
+    width:80%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    padding:5px;
+}
+.logo{
+    padding: 10px;
+    width: 8%;
+}
+
+.persona{
+    width:25%;
+}
+section{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    float: left;
+}
+
+footer{
+    padding:10px;
+    background-color: #6B97B3;
+    width: 80%;
+    margin: 0 auto;
+    opacity: 90%;
+    font-family: 'Roboto', sans-serif;
+}
