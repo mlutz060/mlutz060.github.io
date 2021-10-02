@@ -5,6 +5,13 @@ h1{
     font-family: 'Patua one', serif;
     text-align: center;
 }
+h3{
+    font-family: 'Patua one', serif;
+}
+
+nav{
+    padding: 10px;
+}
 
 ul{
 display: flex;
@@ -13,9 +20,14 @@ font-family: 'Robot', sans-serif;
 list-style-type: none;
 }
 
-li{
-    padding-right: 8%;
-    padding-left: 8%;
+li {
+    padding-inline: 8%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+nav ul li a:hover{
+    background-color: #B6B67C;
+    padding: 20px;
 }
 
 header{
@@ -37,14 +49,9 @@ main{
 
 .persona{
     width:25%;
+    box-shadow: 5px 5px 10px black;
 }
-section{
-    display: flex;
-    flex-wrap: wrap;
-}
-aside{
-    float: left;
-}
+
 
 footer{
     padding:10px;
