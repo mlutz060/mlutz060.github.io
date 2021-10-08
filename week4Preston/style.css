@@ -1,0 +1,84 @@
+
+
+#logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 7em;
+}
+
+body{
+    background-color: #FFF8EB;
+    font-family: 'Patua One', serif;
+    width: 80%;
+    margin: 0 auto;
+
+}
+
+h1{
+    font-family: 'Patua one', serif;
+    text-align: center;
+    color: #363636;
+}
+
+header{
+    background-color: #6B97B3;
+}
+
+footer{
+    padding: 0.5em;
+    background-color: #6B97B3;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color:#FFF8EB;
+}
+
+ul{
+    list-style-type: none;
+    font-family: 'Robot', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    padding: 1em;
+}
+
+a{
+    padding: 1em;
+    color: #FFF8EB;
+}
+
+li a:hover{
+    background-color: #B6B67C;
+}
+
+section{
+    border-style: dashed;
+    background-color: darkgrey;
+}
+
+
+
+/* smaller* media query makes the nav,
+block javaScript is what triggers the hamburger */
+@media screen and (max-width: 32.5em){
+    .navigation{
+        display: flex;
+    }
+    .navigation li:first-child{
+        display:none;
+    }
+
+    .navigation{
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    body{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+}
+
+    

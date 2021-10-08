@@ -1,9 +1,3 @@
-//let date = newDate();
-const year = document.getElementById("currentYear")
-const date = document.getElementById("currentDate")
 
-let todayDate = new Date();
-
-year.innerHTML = todayDate.getFullYear();
-
-date.innerHTML = `${todayDate.getMonth()}/${todayDate.getDate()}/${todayDate.getFullYear()} ${todayDate.toLocaleTimeString()}`;
+const options = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+document.getElementById('currentdate').textContent = new Date().toLocaleDateString('en-US', options);

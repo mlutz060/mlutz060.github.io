@@ -60,43 +60,35 @@ footer{
 }
 
 
-nav ul li a:hover{
-    background-color: #B6B67C;
-    padding: 20px;
-}
-
 nav{
     padding: 10px;
 }
 
 ul{
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     font-family: 'Robot', sans-serif;
+    display: flex;
+    justify-content: space-around;
 }
 
     
-li {
-    float: left;
-    color:#FFF8EB;
+
+a{
+    padding: 1em;
+    color: #FFF8EB;
 }
 
 li a:hover{
     background-color: #B6B67C;
-    padding: 20px;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
 }
 
 
 
 
-@media only screen and (min-width: 768px){
-    nav{
+@media only screen and (max-width: 768px){
+    ul{
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
 } 
