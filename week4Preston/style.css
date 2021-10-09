@@ -1,13 +1,12 @@
-
-
-#logo{
+/* centered and sized*/
+#logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 7em;
 }
 
-body{
+body {
     background-color: #FFF8EB;
     font-family: 'Patua One', serif;
     width: 80%;
@@ -15,51 +14,52 @@ body{
 
 }
 
-h1{
+h1 {
     font-family: 'Patua one', serif;
     text-align: center;
     color: #363636;
 }
 
-header{
+header {
     background-color: #6B97B3;
 }
 
-footer{
+footer {
     padding: 0.5em;
     background-color: #6B97B3;
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
-    color:#FFF8EB;
+    color: #FFF8EB;
 }
 
-ul{
+ul {
     list-style-type: none;
     font-family: 'Robot', sans-serif;
     display: flex;
     justify-content: space-around;
 }
-li{
+
+li {
     padding: 1em;
 }
 
-a{
+a {
     padding: 1em;
     color: #FFF8EB;
     text-decoration: none;
 }
 
-li a:hover{
+li a:hover {
     background-color: #B6B67C;
 }
 
-section{
+section {
     border-style: dashed;
-    background-color:darkgrey
+    background-color: darkgrey
 }
 
-.navigation li:first-child{
-    display:none;
+.navigation li:first-child {
+    display: none;
 }
 
 
@@ -69,23 +69,26 @@ section{
 
 /* smaller* media query makes the nav,
 block javaScript is what triggers the hamburger */
-@media screen and (max-width: 32.5em){
-    .navigation{
+@media screen and (max-width: 32.5em) {
+    .navigation {
         display: block;
     }
-    .navigation li:first-child{
+
+    .navigation li:first-child {
         display: block;
         text-align: center;
     }
-    .navigation li{
+
+    .navigation li {
         display: none;
         flex: 1 1 100%;
     }
 
-    body{
+    body {
         width: 100%;
         margin: 0 auto;
     }
+
     nav.responsive ul.navigation li {
         float: none;
         display: block;
@@ -93,5 +96,3 @@ block javaScript is what triggers the hamburger */
     }
 
 }
-
-    

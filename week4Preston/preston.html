@@ -1,32 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width= <device-width>, initial-scale=1.0">
     <title>Preston Idaho Weather</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <img id="logo" src="../pictures/weather/logo.png" alt="logo">
         <h1>Preston, Idaho</h1>
         <nav class="topnav" id="myTopnav">
             <ul class="navigation">
+                <!--The onclick= is similar to adding an eventListener in javaScript
+                You still have to include more JS to get the button to toggle though
+                and you have to make sure that the place you're trying to make interactive
+                is very easy to reference with ID's and Classes-->
                 <li><a class="icon" href="#" onclick="toggleMenu()"> &#9776; Menu</a></li>
                 <li><a href="../index.html">Portal Page</a></li>
                 <li><a>Soda Springs</a></li>
-                <li><a href="/preston.html">Preston</a></li>
+                <li><a href="/week4Preston/preston.html">Preston</a></li>
                 <li><a>Fish Haven</a></li>
                 <li><a>Storm Center</a></li>
             </ul>
         </nav>
-    
+
     </header>
     <main>
-      <!-- Lorem + a number will give you fake text to fill a space-->
+        <!-- Lorem + a number will give you fake text to fill a space-->
         <section id="weathersummary">
             <h2>Weather Summary</h2>
         </section>
@@ -50,4 +56,5 @@
     </footer>
     <script src="/week4Preston/weather.js"></script>
 </body>
+
 </html
