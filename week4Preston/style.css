@@ -17,7 +17,15 @@ body {
 h1 {
     font-family: 'Patua one', serif;
     text-align: center;
-    color: #363636;
+    color:black;
+}
+h4{
+    color:black;
+    text-align: center;
+}
+
+.title{
+    text-align: center;
 }
 
 header {
