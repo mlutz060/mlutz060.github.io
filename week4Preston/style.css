@@ -89,7 +89,7 @@ block javaScript is what triggers the hamburger */
     nav.responsive ul.navigation li {
         float: none;
         display: block;
-        text-align: left;
+        text-align: center;
     }
 
 }
