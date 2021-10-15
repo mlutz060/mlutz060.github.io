@@ -1,8 +1,4 @@
 
-//const options = {year: 'numeric'};
-//document.getElementById('date').textContent = new Date().toLocaleDateString('en-US', options);
-
-
 function lastSave(){
     const toisoString = new Date(document.lastModified).toISOString();
 
@@ -23,3 +19,15 @@ function lastSave(){
 };
 
 lastSave();
+
+
+//the event listener is onclick in the HTML
+
+function toggleMenu() {
+    var hamburger = document.querySelector("#myTopnav");
+    if (hamburger.className === "topnav") {
+        hamburger.className += " responsive";
+    } else {
+        hamburger.className = "topnav";
+    }
+}

@@ -1,3 +1,7 @@
+/*[title ~= Name] looks for atributes on the page */
+
+
+
 /* centered and sized*/
 #logo {
     display: block;
@@ -57,9 +61,19 @@ a {
     text-decoration: none;
 }
 
-li a:hover {
+.navigation a:link {
+    color: #FFF8EB;
+}
+
+.navigation a:visited {
+    color: #FFF8EB;
+}
+
+.navigation a:hover {
     background-color: #B6B67C;
 }
+
+
 
 section {
     border-style: dashed;
@@ -71,7 +85,7 @@ section {
 }
 
 
-
+/* Love, Hate, link, visited, hover, focus, active */
 
 
 
@@ -103,4 +117,5 @@ block javaScript is what triggers the hamburger */
         text-align: center;
     }
 
+    
 }
