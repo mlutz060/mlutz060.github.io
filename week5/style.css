@@ -1,6 +1,6 @@
 /*[title ~= Name] looks for atributes on the page */
 
-.pancake{
+.pancake {
     background-color: rgb(223, 191, 48);
     padding: .2em;
     position: sticky;
@@ -9,7 +9,7 @@
     display: none;
 }
 
-.friday{
+.friday {
     display: block;
 }
 
@@ -17,14 +17,15 @@
 h1 {
     font-family: 'Patua one', serif;
     text-align: left;
-    color:black;
+    color: black;
 }
-h4{
-    color:black;
+
+h4 {
+    color: black;
     text-align: left;
 }
 
-.title{
+.title {
     text-align: left;
 }
 
@@ -34,16 +35,13 @@ h4{
     width: 7em;
     float: left;
     padding: .3em;
+}
 
+.summary {
+    position: relative
 }
-.summary{
-    position:relative
-}
-#hero{
-    width: 100%;
-    height: auto;
-}
-#weathersummary{
+
+#weathersummary {
     position: absolute;
     top: .5em;
     left: .5em;
@@ -51,23 +49,33 @@ h4{
     height: 75%;
     padding: .5em;
 }
+
+#hero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
 section {
     border-style: dashed;
-    background-color: darkgrey
+    background-color: darkgrey;
+    margin: 0 auto;
 }
 
 body {
     background-color: #FFF8EB;
     font-family: 'Patua One', serif;
-    margin: 0 auto;
+
+
 }
 
 header {
     background-color: #6B97B3;
 }
-main{
-    width: 80%;
+
+main {
     margin: 0 auto;
+    width: 80%;
 }
 
 footer {
@@ -76,35 +84,42 @@ footer {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     color: #FFF8EB;
-    display: flex;
-}
-#map{
-    width: 45%;
-    padding: 1em;
-}
-#contact{
-    width:30%;
-    height: 25%;
-}
-.copyright{
-    
 }
 
-#napoleon{
+#contact {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.social{
     width: 100%;
 
 }
-.text{
+#media{
+    display: flex;
+}
+#map{
+    padding: 2em;
+}
+
+#napoleon {
+    width: 100%;
+}
+
+.text {
     text-align: justify;
 }
-#wrapper{
+
+#wrapper {
     display: flex;
     justify-content: space-around;
 }
-#forecast{
+
+#forecast {
     display: block;
 }
-div .day{
+
+div .day {
     height: 5em;
     width: 5em;
     background-color: orange;
@@ -129,29 +144,31 @@ a {
     color: #FFF8EB;
     text-decoration: none;
 }
-
 .navigation a:link {
     color: #FFF8EB;
 }
 
-.navigation a:visited {
+.navigation a:active {
     color: #FFF8EB;
 }
-
 .navigation a:hover {
-    background-color: #B6B67C;
+    background-color: #6B97B3;
 }
 
 .navigation li:first-child {
     display: none;
 }
-.topnav{
-    background-color:#273842 ;
+
+.topnav {
+    background-color: #273842;
 }
-.head{
-    padding: .5em;
+.topnav #preston a{
+    background-color: #6B97B3;
 }
 
+.head {
+    padding: .5em;
+}
 
 /* Love, Hate, link, visited, hover, focus, active */
 
@@ -184,18 +201,20 @@ block javaScript is what triggers the hamburger */
         display: block;
         text-align: center;
     }
+
     /*Hides five day forecast in mobile view*/
-    #forecast{
+    #forecast {
         display: none;
     }
 
 
-    #weathersummary{
+    #weathersummary {
         position: relative;
         width: 90%;
     }
-    #napoleon{
+
+    #napoleon {
         width: 100%;
     }
-    
+
 }

@@ -1,5 +1,4 @@
-
-function lastSave(){
+function lastSave() {
     const toisoString = new Date(document.lastModified).toISOString();
 
     const options = {
@@ -8,7 +7,7 @@ function lastSave(){
         year: "numeric",
         weekday: "long"
     };
-    
+
     console.log(toisoString);
     const date = new Date(toisoString);
     const upDate = new Intl.DateTimeFormat("en-US", options).format(date);
@@ -33,11 +32,11 @@ function toggleMenu() {
 };
 
 //Shows friday pancake breakfast popup
-function advertise(){
+function advertise() {
     const day = new Date();
     const weekday = day.getDay();
     advertisement = document.querySelector(".pancake");
-    if (weekday == 5){
+    if (weekday == 5) {
         advertisement.className += " friday";
     }
 };
@@ -46,7 +45,7 @@ advertise();
 
 //hides 5 day forecast when in mobile screen
 function forecast() {
-    var predict= document.querySelector("#forecast");
+    var predict = document.querySelector("#forecast");
     if (predict.className === "forecast") {
         predict.className += " mobile";
     } else {

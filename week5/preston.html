@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!--<noscript></noscript-->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,7 +15,7 @@
 <body>
     <div class="pancake">
         <h2>Pancake Breakfast!!</h2>
-        <p>Saturday = Preston Pancakes in the Park!  9:00 a.m. Saturday at the city park pavilion.</p>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
     </div>
     <header>
         <div class="head">
@@ -23,32 +24,32 @@
             <h4>Getting you safely through the trip</h4>
         </div>
         <nav class="topnav" id="myTopnav">
-           <ul class="navigation">
-               <!--The onclick= is similar to adding an eventListener in javaScript
+            <ul class="navigation">
+                <!--The onclick= is similar to adding an eventListener in javaScript
                You still have to include more JS to get the button to toggle though
                and you have to make sure that the place you're trying to make interactive
                is very easy to reference with ID's and Classes-->
-               <li><a class="icon" href="#" onclick="toggleMenu()"> &#9776; Menu</a></li>
-               <li><a href="../index.html">Portal Page</a></li>
-               <li><a>Soda Springs</a></li>
-               <li><a href="/week4Preston/preston.html">Preston</a></li>
-               <li><a>Fish Haven</a></li>
-               <li><a>Storm Center</a></li>
-           </ul>
+                <li><a class="icon" href="#" onclick="toggleMenu()"> &#9776; Menu</a></li>
+                <li><a href="../index.html">Portal Page</a></li>
+                <li><a>Soda Springs</a></li>
+                <li><a id="preston" href="/week5/preston.html">Preston</a></li>
+                <li><a>Fish Haven</a></li>
+                <li><a>Storm Center</a></li>
+            </ul>
         </nav>
     </header>
     <main>
         <h2 class="title">Preston</h2>
         <!-- Lorem + a number will give you fake text to fill a space-->
         <div class="summary">
-            <img  id="hero" src="/pictures/preston_hero.jpg" alt="The woods in preston, Idaho">
+            <img id="hero" src="/pictures/preston_hero.jpg" alt="The woods in preston, Idaho">
             <section id="weathersummary">
                 <h2>Weather Summary</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur
-                 adipisicing elit. Dignissimos ipsa consectetur a, 
-                 molestiae voluptas ipsum, est accusantium id facere 
-                 provident atque nesciunt dicta, perspiciatis itaque! 
-                 Nostrum omnis ad quod reiciendis!</p>
+                    adipisicing elit. Dignissimos ipsa consectetur a,
+                    molestiae voluptas ipsum, est accusantium id facere
+                    provident atque nesciunt dicta, perspiciatis itaque!
+                    Nostrum omnis ad quod reiciendis!</p>
             </section>
         </div>
 
@@ -67,23 +68,30 @@
         <section id="article">
             <h2>Article</h2>
             <img id="napoleon" src="../pictures/napoleon.png" alt="A man with an afro dancing">
-                <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum fugiat sunt aut placeat
-                    voluptatibus distinctio mollitia id quam nihil 
-                    veritatis hic dolores tempore harum vero quos doloribus, eos iusto.
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nostrum fugiat sunt aut
+                placeat
+                voluptatibus distinctio mollitia id quam nihil
+                veritatis hic dolores tempore harum vero quos doloribus, eos iusto.
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci neque provident
-                 iusto dolorem ratione labore voluptas, accusamus repudiandae voluptate suscipit fugit 
-                 laborum dicta voluptates! Cumque at eos corporis illo. Fugit.</p>
-        
+                iusto dolorem ratione labore voluptas, accusamus repudiandae voluptate suscipit fugit
+                laborum dicta voluptates! Cumque at eos corporis illo. Fugit.</p>
         </section>
         <br>
     </main>
+    <section id="contact">
+        <img id="map" src="/pictures/map.jpg">
+        <h2>Contact</h2>
+        <h3>Email:</h3>
+        <h3>Phone:</h3>
+        <h3>Address:</h3>
+        <div id="media">
+            <a href="https://www.instagram.com/?hl=en"><img class="social" src="/pictures/icons/instagram.svg" alt="Intagram social media logo" ></a>
+            <a href="https://www.pinterest.com/"><img class="social" src="/pictures/icons/pinterest.svg" alt="Pinterest Social media logo"></a>
+            <a href="https://www.facebook.com/"><img class="social" src="/pictures/icons/facebook.svg" alt="Facebook social media logo"></a>
+        </div>
+    </section>
     <br>
     <footer>
-        <img id="map" src="/pictures/map.jpg">
-        <section id="contact">
-            <h2>Contact</h2>
-        </section>
-        
         <div class="copyright">
             &copy; <span id="currentYear"></span> Weathering the trip|
             BYU-Idaho <span id="date"></span>
