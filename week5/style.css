@@ -88,17 +88,20 @@ footer {
 
 #contact {
     width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
 }
 .social{
     width: 100%;
-
+    flex-wrap: wrap;
+}
+#title{
+    flex-wrap:wrap;
 }
 #media{
     display: flex;
 }
 #map{
+    width:25%;
     padding: 2em;
 }
 
