@@ -1,19 +1,23 @@
 const input = document.getElementById("favchap").value;
 
 function addtoArray(input) {
-    const button = document.getElementById("submit").addEventListener("click", );{
         let favScrpt = [];
         favScrpt.push("input"); 
-    };
-    return favScrpt
+    return favScrpt;
 };
 
 function printList(array){
-
     favScrpt.forEach((item) => {
-        let input = document.createElement("li");
+        let list = document.createElement("li");
         li.innerHTML = item;
         list.appendChild(li);
     });
-}
+};
+
+const button = document.getElementById("submit")
+if(button){
+    button.addEventListener("click", addtoArray);
+    button.addEventListener("click",  printList);
+};
+
 

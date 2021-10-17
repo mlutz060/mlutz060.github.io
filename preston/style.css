@@ -2,6 +2,11 @@
 
 
 
+#pancake{
+    background-color: olive;
+    
+}
+
 /* centered and sized*/
 #logo {
     display: block;

@@ -30,29 +30,4 @@ function toggleMenu() {
     } else {
         hamburger.className = "topnav";
     }
-};
-
-//Shows friday pancake breakfast popup
-function advertise(){
-    const day = new Date();
-    const weekday = day.getDay();
-    advertisement = document.querySelector(".pancake");
-    if (weekday == 5){
-        advertisement.className += " friday";
-    }
-};
-
-advertise();
-
-//hides 5 day forecast when in mobile screen
-function forecast() {
-    var predict= document.querySelector("#forecast");
-    if (predict.className === "forecast") {
-        predict.className += " mobile";
-    } else {
-        predict.className = "forecast";
-    };
-};
-
-//Alert users that JavaScipt is needed to improve the page 
-//alert("JavaScript is needed to enhance features of the page!")
+}
