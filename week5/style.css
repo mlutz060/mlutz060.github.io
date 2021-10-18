@@ -60,6 +60,7 @@ section {
     border-style: dashed;
     background-color: darkgrey;
     margin: 0 auto;
+    width: 100%;
 }
 
 body {
@@ -88,21 +89,18 @@ footer {
 
 #contact {
     width: 100%;
-    display: flex;
+    align-items: center;
+    text-align: left;
+
 }
-.social{
-    width: 100%;
-    flex-wrap: wrap;
+#title img{
+    width: 4%;
 }
-#title{
-    flex-wrap:wrap;
-}
-#media{
-    display: flex;
-}
+
 #map{
     width:25%;
-    padding: 2em;
+    padding: 1em;
+    float:left;
 }
 
 #napoleon {
