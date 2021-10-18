@@ -170,7 +170,9 @@ a {
 .head {
     padding: .5em;
 }
-
+div .day img{
+    width: 100%;
+}
 
 
 /* Love, Hate, link, visited, hover, focus, active */
