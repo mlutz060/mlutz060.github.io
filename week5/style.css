@@ -25,6 +25,8 @@ h4 {
     text-align: left;
 }
 
+
+
 .title {
     text-align: left;
 }
@@ -107,7 +109,7 @@ footer {
 }
 
 #napoleon {
-    width: 50%;
+    width: 35%;
     padding:.5em;
     float: right;
 }
@@ -128,7 +130,10 @@ footer {
 div .day {
     height: 5em;
     width: 5em;
-    background-color: orange;
+    background-color:#6B97B3;
+}
+div .day img{
+    width: 100%;
 }
 
 
@@ -160,19 +165,24 @@ a {
 
 .navigation li:first-child {
     display: none;
+    background-color:#273842 ;
 }
 .topnav {
     background-color: #273842;
 }
- #preston {
-    background-color: #6B97B3;
-}
+
 .head {
     padding: .5em;
 }
-div .day img{
-    width: 100%;
+
+#preston #navigation a[title~=preston],
+#soda #navigation a[title~=soda],
+#fish #navigation a[title~=fish],
+#storm #navigation a[title~=storm] {
+    background-color: #6B97B3;
 }
+
+
 
 
 /* Love, Hate, link, visited, hover, focus, active */
