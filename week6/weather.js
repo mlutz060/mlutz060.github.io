@@ -44,3 +44,12 @@ function banner() {
          pancake.className = "pancake";
     }
 };
+
+
+function windchill() {
+    let chill = document.querySelector('.chill')
+    let temp = 54;
+    let wind = 12;
+    let windChill = (wind * .07) - 54;
+    document.chill.innerHTML(windChill);
+};
