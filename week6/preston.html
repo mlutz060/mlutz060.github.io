@@ -43,12 +43,16 @@
         <h2 class="title">Preston</h2>
         <!-- Lorem + a number will give you fake text to fill a space-->
         <div class="summary">
-            <img id="hero" src="/pictures/week6/hero1400w.jpg" alt="The woods in preston, Idaho">
+            <picture id="hero">
+                <source type="image/jpg" srcset="../pictures/week6/hero1400w.jpg" media="screen and (min-width:1200px)">
+                <source type="image/jpg" srcset="../pictures/week6/hero950w" media="screen and (min-width:700px)">
+                <source type="image/jpg" srcset="../pictures/week6/hero400w" alt="mountains trees and sunny skies">
+            </picture>
             <section id="weathersummary">
                 <h2>Weather Summary</h2>
                 <p>Currently: Rainy</p>
                 <p class='temp'>High: 54</p>
-                <p class='chill'>Wind Chill: </p>
+                <p class='windchill'>Wind Chill: <span id="windchill">??</span>°F</p>
                 <p>Humidity: 95%</p>
                 <p class='speed'>Wind Speed: 12mph</p>
             </section>
