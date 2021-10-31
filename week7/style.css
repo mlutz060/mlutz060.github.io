@@ -1,5 +1,6 @@
 /*[title ~= Name] looks for atributes on the page */
 
+
 .pancake {
     background-color: rgb(223, 191, 48);
     padding: .2em;
@@ -182,11 +183,38 @@ a {
     background-color: #6B97B3;
 }
 
+.gallery{
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 3em;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-content: space-around;
+}
 
+.image{
+    width:100%;
+}
 
+img:hover{
+    box-shadow: 0px 30px black;
+}
 
 /* Love, Hate, link, visited, hover, focus, active */
 
+
+
+@media screen and (max-width: 64em) {
+    .gallery{
+        display: grid;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-columns: 1fr 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+}
 
 
 /* smaller* media query makes the nav,
@@ -216,6 +244,20 @@ block javaScript is what triggers the hamburger */
         display: block;
         text-align: center;
     }
+    .gallery{
+        display: grid;
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+        grid-template-columns: 1fr;
+        justify-content: space-around;
+        align-content: space-around;
+    }
+    
+    .image{
+        width:100%;
+    }
+  
+
 
     /*Hides five day forecast in mobile view*/
     #forecast {
