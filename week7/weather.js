@@ -33,48 +33,36 @@ function toggleMenu() {
     }
 };
 
-function banner() {
-    const d = new Date();
-    let today = d.getDay();
-    var pancake = document.querySelector(".pancake");
+let imagesToLoad = document.querySelectorAll("img[data-src]");
 
-    if (today == 5){
-        pancake.className += " friday";
-    } else {
-         pancake.className = "pancake";
-    }
+const imgOptions = {
+  threshold: 0.1
+}
+const loadImages = (image) => {
+  image.setAttribute('src', image.getAttribute("data-src"));
+  image.onload = () => {
+    image.removeAttribute('data-src');
+  };
 };
 
+if ("IntersectionObserver" in window) {
+  const observer = new IntersectionObserver((items, observer) => {
+    items.forEach((item) => {
+      if (item.isIntersecting) {
+        loadImages(item.target);
+        observer.unobserve(item.target);
+      }
+    });
+  }, imgOptions);
 
-function windchill() {
-    let chill = document.querySelector('.chill')
-    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-    console.log(wc);
-    wc = Math.floor(wc);
-    wc = (wc > temp)?temp:wc;
-    wcTemp.innerHTML = wc;
-    document.chill.innerHTML(windChill);
-};
+  imagesToLoad.forEach((img) => {
+    observer.observe(img);
+  });
+} else {
+  imagesToLoad.forEach((img) => {
+    loadImages(img);
+  });
+}
 
-
- // Calculate the Windchill
- function buildWC(speed, temp) {
-    let wcTemp = document.getElementById('windchill');
-   
-    // Compute the windchill
-    let temp = 54;
-    speed = 12;
-    let wc = 35.74 + 0.6215 * temp - 35.75 * Math.pow(speed, 0.16) + 0.4275 * temp * Math.pow(speed, 0.16);
-    console.log(wc);
-   
-    // Round the answer down to integer
-    wc = Math.floor(wc);
-   
-    // If chill is greater than temp, return the temp
-    wc = (wc > temp)?temp:wc;
-   
-    // Display the windchill
-    console.log(wc);
-    wc = wc+'°F';
-    wcTemp.innerHTML = wc;
-    }
+loadImages();
+imagesToLoad();
