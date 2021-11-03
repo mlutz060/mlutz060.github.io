@@ -64,5 +64,4 @@ if ("IntersectionObserver" in window) {
   });
 }
 
-loadImages();
-imagesToLoad();
+

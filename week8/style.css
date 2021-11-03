@@ -196,12 +196,11 @@ a {
     width:100%;
 }
 
-#card{
-    border: grey;
+img:hover{
+    box-shadow: 0px 30px black;
 }
-
-#card:hover{
-    box-shadow: 15px 25px 15px grey;
+#form div{
+    padding: 1%;
 }
 
 /* Love, Hate, link, visited, hover, focus, active */
