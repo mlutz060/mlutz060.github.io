@@ -43,61 +43,103 @@
         <h2 class="title">Storm Center</h2>
         <p>Use this form to alert us of any unusual storms or unexpected weather in your area.</p>
             <section id="form">
-                <div>
-                    <label for="form">First and Last Name:</label>
-                    <input type="text" id="name" name="name" required
-                    minlength="4" maxlength="50" size="10">
-                </div>
-                <div>
-                    <label for="form">Email: </label>
-                    <input type="text" id="email" name="email" required
-                    minlength="10" size="10">
-                </div>
-                <div>
-                    <label for="form">Phone: </label>
-                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                    <br>
-                    <small>Format: 123-456-7890</small>
-                </div>
-                <div>
-                    <label for="form">Zip Code: </label>
-                    <input type="number" id="zip" name="zip" required
-                    minlength="5" size="5">
-                </div>
-                <div>
-                    <label for="form">Storm Date: </label>
-                    <input type="date" id="date" name="date" required
-                    minlength="10" size="10">
-                </div>
-                <div>
-                    <label for="form">Storm Type: </label>
-                    <input type="text" id="type" name="type" required
-                    minlength="10" size="10">
-                </div>
-                <div>
-                    <label for="form">Storm Severity: </label>
-                    <input type="text" id="severity" name="severity" required
-                    minlength="10" size="10">
-                </div>
-                <div>
-                    <label for="form">Region: </label>
-                    <input type="" id="region" name="region" required
-                    minlength="10" size="10">
-                </div>
-                <div>
-                    <label for="form">User Danger: </label>
-                    <input type="radio" id="danger" name="danger" required
-                    minlength="10" size="10">
-                <div>
-                    <label for="danger">Yes</label>
-                    <input type="radio" id="danger" name="danger" required
-                    minlength="10" size="10">
-                    <label for="danger">No</label>
-                    <input type="radio" id="danger" name="danger" required
-                    minlength="10" size="10">
-                    <label for="danger">Maybe</label>
-                </div>
-                <button>Submit</button>
+                <form method="get" action="thanks.html">
+
+                    <fieldset>
+                        <legend>Personal Information</legend>
+                        <div>
+                    
+                            <div class="title"><label for="form">First Name:</label></div>
+                            <input type="text" id="input" name="name" required
+                            minlength="4" maxlength="50"  pattern="[a-zA-Z] {5}" placeholder="John">
+                            <div class="title"><label for="form">Last Name:</label></div>
+                            <input type="text" id="input" name="name" required
+                            minlength="4" maxlength="50"  pattern="[A-Z a-z] {5}" placeholder="Smith">
+                        </div>
+                        <div>
+                            <div class="title"><label for="form">Email: </label></div>
+                            <input type="text" id="input" name="email" required
+                            {10} placeholder="abcd@123.com">
+                            <small>Format: abcd@1234.com</small>
+                        </div>
+                        <div>
+                            <div class="title"><label for="form">Phone: </label></div>
+                            <input type="tel" id="input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
+                            <small>Format: 123-456-7890</small>
+                            <br>
+                        </div>
+                        <div>
+                            <div class="title"><label for="form">Zip Code: </label></div>
+                            <input type="number" id="input" name="zip" required placeholder="83440">
+                            <small>Format: 00000</small>
+                        </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Storm Information</legend>
+                    <div>
+                        <div class="title"><label for="form">Storm Date: </label></div>
+                        <input type="date" id="input" name="date">
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">Storm Type: </label></div>
+                        <select id="storm" name="storm type">
+                            <option value="hold" disabled hidden selected>Pick One</option>
+                            <option value="thunder">Thunderstorm</option>
+                            <option value="ice">Ice Storm</option>
+                            <option value="tornado">Tornado</option>
+                            <option value="blizzard">Blizzard</option>
+                            <option value="derecho">Derecho Storm</option>
+                            <option value="hail">Hail Storm</option>
+                        </select>
+                    </div>
+                    <div class="severity">
+                        <div class="title"><label class="top" for="rating">Storm Severity (1-10): 5 &nbsp;&nbsp;&nbsp;</div>
+                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="numberline" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                            <span id="ratingvalue"></span>
+                        </label>
+                
+                        <datalist id="numberline">
+                            <option value="0">
+                            <option value="1">
+                            <option value="2">
+                            <option value="3">
+                            <option value="4">
+                            <option value="5">
+                            <option value="6">
+                            <option value="7">
+                            <option value="8">
+                            <option value="9">
+                            <option value="10">
+                        </datalist>
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">Region: </label></div>
+                        <select name="region" id="region">
+                            <option value="hold"  disabled hidden selected>Select Region</option>
+                            <option value="preston">Preston</option>
+                            <option value="fish-haven">Fish Haven</option>
+                            <option value="soda">Soda Springs</option>
+
+                        </select>
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">User Danger: </label></div>
+                    
+                        <div>
+                            <label for="danger">Yes</label>
+                            <input type="radio" id="danger" name="danger">
+                        </div>
+                        <div>
+                            <label for="danger">No</label>
+                            <input type="radio" id="danger" name="danger">
+                        <div>
+                            <label for="danger">Maybe</label>
+                            <input type="radio" id="danger" name="danger">
+                        </div>
+                    </div>
+                </fieldset>
+                <input type="submit" value="Report Storm" id="submit">
+                </form>
             </section>
         <br>
     </main>

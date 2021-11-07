@@ -183,24 +183,39 @@ a {
     background-color: #6B97B3;
 }
 
-.gallery{
-    display: grid;
-    grid-column-gap: 1em;
-    grid-row-gap: 3em;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-around;
-    align-content: space-around;
-}
-
-.image{
-    width:100%;
-}
-
-img:hover{
-    box-shadow: 0px 30px black;
-}
-#form div{
+#form{
     padding: 1%;
+}
+.title{
+    padding-top: 1em;
+}
+#input{
+    padding: .75em;
+    width: 95%;
+    box-shadow: 0px 10px 20px grey;
+}
+#storm{
+    padding: .5em;
+    width: 97%;
+    box-shadow: 0px 10px 20px grey;
+}
+#region{
+    padding: .5em;
+    width: 97%;
+    box-shadow: 0px 10px 20px grey;
+}
+#rating{
+    padding: .5em;
+    width: 95%;
+}
+.top{
+    padding: 0.5em;
+}
+#submit{
+    padding:1em;
+    width: 30%;
+    font-family: 'Patua One', serif;
+    
 }
 
 /* Love, Hate, link, visited, hover, focus, active */
