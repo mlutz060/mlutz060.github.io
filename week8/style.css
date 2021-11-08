@@ -189,7 +189,7 @@ a {
 .title{
     padding-top: 1em;
 }
-#input{
+.input{
     padding: .75em;
     width: 95%;
     box-shadow: 0px 10px 20px grey;

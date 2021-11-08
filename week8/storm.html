@@ -42,43 +42,43 @@
     <main>
         <h2 class="title">Storm Center</h2>
         <p>Use this form to alert us of any unusual storms or unexpected weather in your area.</p>
-            <section id="form">
-                <form method="get" action="thanks.html">
+        <section id="form">
+            <form method="get" action="thanks.html">
 
-                    <fieldset>
-                        <legend>Personal Information</legend>
-                        <div>
-                    
-                            <div class="title"><label for="form">First Name:</label></div>
-                            <input type="text" id="input" name="name" required
-                            minlength="4" maxlength="50"  pattern="[a-zA-Z] {5}" placeholder="John">
-                            <div class="title"><label for="form">Last Name:</label></div>
-                            <input type="text" id="input" name="name" required
-                            minlength="4" maxlength="50"  pattern="[A-Z a-z] {5}" placeholder="Smith">
-                        </div>
-                        <div>
-                            <div class="title"><label for="form">Email: </label></div>
-                            <input type="text" id="input" name="email" required
-                            {10} placeholder="abcd@123.com">
-                            <small>Format: abcd@1234.com</small>
-                        </div>
-                        <div>
-                            <div class="title"><label for="form">Phone: </label></div>
-                            <input type="tel" id="input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="123-456-7890">
-                            <small>Format: 123-456-7890</small>
-                            <br>
-                        </div>
-                        <div>
-                            <div class="title"><label for="form">Zip Code: </label></div>
-                            <input type="number" id="input" name="zip" required placeholder="83440">
-                            <small>Format: 00000</small>
-                        </div>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div>
+
+                        <div class="title"><label for="form">First Name:</label></div>
+                        <input type="text" class="input" name="name" required minlength="4" maxlength="50"
+                            pattern="[a-zA-Z] {5}" placeholder="John">
+                        <div class="title"><label for="form">Last Name:</label></div>
+                        <input type="text" class="input" name="name" required minlength="4" maxlength="50"
+                            pattern="[A-Z a-z] {5}" placeholder="Smith">
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">Email: </label></div>
+                        <input type="text" class="input" name="email" required placeholder="abcd@123.com">
+                        <small>Format: abcd@1234.com</small>
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">Phone: </label></div>
+                        <input type="tel" class="input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                            placeholder="123-456-7890">
+                        <small>Format: 123-456-7890</small>
+                        <br>
+                    </div>
+                    <div>
+                        <div class="title"><label for="form">Zip Code: </label></div>
+                        <input type="number" class="input" name="zip" required placeholder="83440">
+                        <small>Format: 00000</small>
+                    </div>
                 </fieldset>
                 <fieldset>
                     <legend>Storm Information</legend>
                     <div>
                         <div class="title"><label for="form">Storm Date: </label></div>
-                        <input type="date" id="input" name="date">
+                        <input type="date" class="input" name="date">
                     </div>
                     <div>
                         <div class="title"><label for="form">Storm Type: </label></div>
@@ -93,11 +93,12 @@
                         </select>
                     </div>
                     <div class="severity">
-                        <div class="title"><label class="top" for="rating">Storm Severity (1-10): 5 &nbsp;&nbsp;&nbsp;</div>
-                            <input type="range" id="rating" value="5" min="1" max="10" step="1" list="numberline" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-                            <span id="ratingvalue"></span>
+                        <div class="title"><label class="top" for="rating">Storm Severity (1-10): 5 &nbsp;&nbsp;&nbsp;</label></div>
+                        <input type="range" id="rating" value="5" min="1" max="10" step="1" list="numberline"
+                            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                        <span id="ratingvalue"></span>
                         </label>
-                
+
                         <datalist id="numberline">
                             <option value="0">
                             <option value="1">
@@ -113,9 +114,10 @@
                         </datalist>
                     </div>
                     <div>
-                        <div class="title"><label for="form">Region: </label></div>
+                        <div class="title"><label for="form">Region: </label>
+                        </div>
                         <select name="region" id="region">
-                            <option value="hold"  disabled hidden selected>Select Region</option>
+                            <option value="hold" disabled hidden selected>Select Region</option>
                             <option value="preston">Preston</option>
                             <option value="fish-haven">Fish Haven</option>
                             <option value="soda">Soda Springs</option>
@@ -123,24 +125,26 @@
                         </select>
                     </div>
                     <div>
-                        <div class="title"><label for="form">User Danger: </label></div>
-                    
+                        <div class="title"><label for="form">User Danger: </label>
+                        </div>
+
                         <div>
                             <label for="danger">Yes</label>
                             <input type="radio" id="danger" name="danger">
                         </div>
                         <div>
                             <label for="danger">No</label>
-                            <input type="radio" id="danger" name="danger">
-                        <div>
-                            <label for="danger">Maybe</label>
-                            <input type="radio" id="danger" name="danger">
-                        </div>
+                            <input type="radio" class="danger" name="danger">
+                            </div>
+                            <div>
+                                <label for="danger">Maybe</label>
+                                <input type="radio" class="danger" name="danger">
+                            </div>
                     </div>
                 </fieldset>
                 <input type="submit" value="Report Storm" id="submit">
-                </form>
-            </section>
+            </form>
+        </section>
         <br>
     </main>
     <section id="contact">
@@ -150,9 +154,12 @@
             <h3>Email: weatherthestorm@abcmail.com</h3>
             <h3>Phone: (123)456-7890</h3>
             <h3>Address: 000 Street Pl Preston, Idaho</h3>
-            <a href="https://www.instagram.com/?hl=en"><img class="social" src="/pictures/icons/instagram.svg" alt="Intagram social media logo" ></a>
-            <a href="https://www.pinterest.com/"><img class="social" src="/pictures/icons/pinterest.svg" alt="Pinterest Social media logo"></a>
-            <a href="https://www.facebook.com/"><img class="social" src="/pictures/icons/facebook.svg" alt="Facebook social media logo" ></a>
+            <a href="https://www.instagram.com/?hl=en"><img class="social" src="/pictures/icons/instagram.svg"
+                    alt="Intagram social media logo"></a>
+            <a href="https://www.pinterest.com/"><img class="social" src="/pictures/icons/pinterest.svg"
+                    alt="Pinterest Social media logo"></a>
+            <a href="https://www.facebook.com/"><img class="social" src="/pictures/icons/facebook.svg"
+                    alt="Facebook social media logo"></a>
         </div>
     </section>
     <br>
