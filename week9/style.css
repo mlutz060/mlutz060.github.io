@@ -1,0 +1,15 @@
+h1{
+    text-align: center;
+}
+
+body{
+
+}
+
+section{
+    box-shadow: 10px 5px 5px black;
+    border-style: solid;
+    border: black;
+    justify-content: space-between;
+    width: 30%;
+}

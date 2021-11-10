@@ -49,39 +49,39 @@
                     <legend>Personal Information</legend>
                     <div>
 
-                        <div class="title"><label for="form">First Name:</label></div>
-                        <input type="text" class="input" name="name" required minlength="4" maxlength="50"
+                        <div class="title"><label for="name">First Name:</label></div>
+                        <input type="text" id="name" name="name" required minlength="4" maxlength="50"
                             pattern="[a-zA-Z] {5}" placeholder="John">
-                        <div class="title"><label for="form">Last Name:</label></div>
-                        <input type="text" class="input" name="name" required minlength="4" maxlength="50"
+                        <div class="title"><label for="lname">Last Name:</label></div>
+                        <input type="text" id="lname" name="name" required minlength="4" maxlength="50"
                             pattern="[A-Z a-z] {5}" placeholder="Smith">
                     </div>
                     <div>
-                        <div class="title"><label for="form">Email: </label></div>
-                        <input type="text" class="input" name="email" required placeholder="abcd@123.com">
+                        <div class="title"><label for="email">Email: </label></div>
+                        <input type="text" id="email" name="email" required placeholder="abcd@123.com">
                         <small>Format: abcd@1234.com</small>
                     </div>
                     <div>
-                        <div class="title"><label for="form">Phone: </label></div>
-                        <input type="tel" class="input" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
+                        <div class="title"><label for="phone">Phone: </label></div>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required
                             placeholder="123-456-7890">
                         <small>Format: 123-456-7890</small>
                         <br>
                     </div>
                     <div>
-                        <div class="title"><label for="form">Zip Code: </label></div>
-                        <input type="number" class="input" name="zip" required placeholder="83440">
+                        <div class="title"><label for="zip">Zip Code: </label></div>
+                        <input type="number" id="zip" name="zip" required placeholder="83440">
                         <small>Format: 00000</small>
                     </div>
                 </fieldset>
                 <fieldset>
                     <legend>Storm Information</legend>
                     <div>
-                        <div class="title"><label for="form">Storm Date: </label></div>
-                        <input type="date" class="input" name="date">
+                        <div class="title"><label for="date">Storm Date: </label></div>
+                        <input type="date" id="date" name="date">
                     </div>
                     <div>
-                        <div class="title"><label for="form">Storm Type: </label></div>
+                        <div class="title"><label for="storm">Storm Type: </label></div>
                         <select id="storm" name="storm type">
                             <option value="hold" disabled hidden selected>Pick One</option>
                             <option value="thunder">Thunderstorm</option>
@@ -114,7 +114,7 @@
                         </datalist>
                     </div>
                     <div>
-                        <div class="title"><label for="form">Region: </label>
+                        <div class="title"><label for="region">Region: </label>
                         </div>
                         <select name="region" id="region">
                             <option value="hold" disabled hidden selected>Select Region</option>
@@ -125,20 +125,20 @@
                         </select>
                     </div>
                     <div>
-                        <div class="title"><label for="form">User Danger: </label>
+                        <div class="title"><label for="danger">User Danger: </label>
                         </div>
 
                         <div>
-                            <label for="danger">Yes</label>
-                            <input type="radio" id="danger" name="danger">
+                            <label for="yes">Yes</label>
+                            <input type="radio" id="yes" name="danger">
                         </div>
                         <div>
-                            <label for="danger">No</label>
-                            <input type="radio" class="danger" name="danger">
+                            <label for="no">No</label>
+                            <input type="radio" id="no" name="danger">
                             </div>
                             <div>
-                                <label for="danger">Maybe</label>
-                                <input type="radio" class="danger" name="danger">
+                                <label for="maybe">Maybe</label>
+                                <input type="radio" id="maybe" name="danger">
                             </div>
                     </div>
                 </fieldset>
@@ -169,7 +169,7 @@
             BYU-Idaho <span id="date"></span>
         </div>
     </footer>
-    <script src="/preston/weather.js"></script>
+    <script src="/week8/script.js"></script>
 </body>
 
 </html>
