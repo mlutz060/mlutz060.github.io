@@ -2,14 +2,25 @@ h1{
     text-align: center;
 }
 
-body{
+.cards{
+    display:grid;
+    grid-gap: 1em;
+    width: 100%;
+
+
 
 }
-
+.cards img{
+    align-self: center;
+    max-width: 75%;
+}
 section{
-    box-shadow: 10px 5px 5px black;
+    display: flex;
+    flex-direction: column;
     border-style: solid;
-    border: black;
-    justify-content: space-between;
-    width: 30%;
+}
+@media only screen and (min-width: 60rem) {
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
