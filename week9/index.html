@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<noscript></noscript-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storm Center</title>
+    <link rel="stylesheet" href="/week8/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body id="preston">
+    <div class="pancake">
+        <h2>Pancake Breakfast!!</h2>
+        <p>Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</p>
+    </div>
+    <header>
+        <div class="head">
+            <img id="logo" src="../pictures/weather/logo.png" alt="logo">
+            <h1>Weathering The Storm</h1>
+            <h4>Getting you safely through the trip</h4>
+            <noscript>JavaScript is needed to enhance the website.</noscript>
+        </div>
+        <nav class="topnav" id="myTopnav">
+            <ul class="navigation">
+                <!--The onclick= is similar to adding an eventListener in javaScript
+               You still have to include more JS to get the button to toggle though
+               and you have to make sure that the place you're trying to make interactive
+               is very easy to reference with ID's and Classes-->
+                <li><a class="icon" href="#" onclick="toggleMenu()"> &#9776; Menu</a></li>
+                <li><a href="../index.html">Portal Page</a></li>
+                <li><a>Soda Springs</a></li>
+                <li><a title="preston" href="/week5/preston.html">Preston</a></li>
+                <li><a>Fish Haven</a></li>
+                <li><a>Storm Center</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id='city'>
+            </div>
+    </main>
+    <section id="contact">
+        <img id="map" src="/pictures/map.jpg" alt="map of preston">
+        <div id="title">
+            <h2>Contact</h2>
+            <h3>Email: weatherthestorm@abcmail.com</h3>
+            <h3>Phone: (123)456-7890</h3>
+            <h3>Address: 000 Street Pl Preston, Idaho</h3>
+            <a href="https://www.instagram.com/?hl=en"><img class="social" src="/pictures/icons/instagram.svg"
+                    alt="Intagram social media logo"></a>
+            <a href="https://www.pinterest.com/"><img class="social" src="/pictures/icons/pinterest.svg"
+                    alt="Pinterest Social media logo"></a>
+            <a href="https://www.facebook.com/"><img class="social" src="/pictures/icons/facebook.svg"
+                    alt="Facebook social media logo"></a>
+        </div>
+    </section>
+    <br>
+    <footer>
+        <div class="copyright">
+            &copy; <span id="currentYear"></span> Weathering the trip|
+            BYU-Idaho <span id="date"></span>
+        </div>
+    </footer>
+    <script src="/week8/script.js"></script>
+    <a>wireframe</a>
+</body>
+
+</html>
