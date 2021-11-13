@@ -1,0 +1,150 @@
+h1 {
+    font-family: 'Patua one', serif;
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    color: black;
+    text-align: left;
+}
+
+
+
+.title {
+    text-align: left;
+}
+
+/* centered and sized*/
+#logo {
+    display: block;
+    width: 7em;
+    float: left;
+    padding: .3em;
+}
+
+.summary {
+    position: relative
+}
+
+#weathersummary {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    width: 30%;
+    height: 75%;
+    padding: .5em;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+section {
+    border-style: dashed;
+    background-color: darkgrey;
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    background-color: #FFF8EB;
+    font-family: 'Patua One', serif;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+section{
+    background-color: #6B97B3;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-style: solid;
+}
+
+header {
+    background-color: #6B97B3;
+}
+
+main {
+    margin: 0 auto;
+    width: 80%;
+}
+
+footer {
+    padding: 0.5em;
+    background-color: #273842;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    color: #FFF8EB;
+}
+
+#contact {
+    width: 100%;
+    align-items: center;
+    text-align: left;
+
+}
+#title img{
+    width: 4%;
+}
+
+#map{
+    width:25%;
+    padding: 1em;
+    float:left;
+}
+
+/* Navigation */
+
+ul {
+    list-style-type: none;
+    font-family: 'Robot', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    padding: 1em;
+}
+
+a {
+    padding: 1em;
+    color: #FFF8EB;
+    text-decoration: none;
+}
+.navigation a:link {
+    color: #FFF8EB;
+}
+
+.navigation a:hover {
+    background-color: #6B97B3;
+}
+
+.navigation li:first-child {
+    display: none;
+    background-color:#273842 ;
+}
+.topnav {
+    background-color: #273842;
+}
+
+.head {
+    padding: .5em;
+}
+
+
+
+@media screen and (min-width: 50em){
+    
+}
+
+@media screen and (min-width: 25em){
+    
+}
