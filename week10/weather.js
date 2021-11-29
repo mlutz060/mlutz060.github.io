@@ -1,6 +1,4 @@
-
-
-function lastSave(){
+function lastSave() {
     const toisoString = new Date(document.lastModified).toISOString();
 
     const options = {
@@ -9,7 +7,7 @@ function lastSave(){
         year: "numeric",
         weekday: "long"
     };
-    
+
     console.log(toisoString);
     const date = new Date(toisoString);
     const upDate = new Intl.DateTimeFormat("en-US", options).format(date);
@@ -46,16 +44,16 @@ fetch(current)
         throw new ERROR('Network response was not okay');
     })
     .then(function (jsonObject) {
-        console.log(jsonObject);    
-            document.querySelector('#current').innerHTML = 'Currently: ' + jsonObject.main.temp + '&deg;F' ;
-            document.querySelector('#high').innerHTML = 'High: ' +jsonObject.main.temp_max + '&deg;F';
-            document.querySelector('#windchill').innerHTML = 'Wind Chill: ' + jsonObject.main.feels_like + '&deg;F';
-            document.querySelector('#humidity').innerHTML = 'Humidity: ' + jsonObject.main.humidity ;
-            document.querySelector('#windspeed').innerHTML = 'Windspeed: ' + jsonObject.main.wind.speed ;
+        console.log(jsonObject);
+        document.querySelector('#current').innerHTML = 'Currently: ' + jsonObject.main.temp + '&deg;F';
+        document.querySelector('#high').innerHTML = 'High: ' + jsonObject.main.temp_max + '&deg;F';
+        document.querySelector('#windchill').innerHTML = 'Wind Chill: ' + jsonObject.main.feels_like + '&deg;F';
+        document.querySelector('#humidity').innerHTML = 'Humidity: ' + jsonObject.main.humidity;
+        document.querySelector('#windspeed').innerHTML = 'Windspeed: ' + jsonObject.main.wind.speed;
 
 
         let iconPath = "https://openweathermap.org/weather-conditions"
-        
+
     });
 
 fetch(fiveDay)
@@ -67,12 +65,20 @@ fetch(fiveDay)
     })
     .then(function (jsonObject) {
         console.log(jsonObject);
-            document.querySelector('#wed').innerHTML = + jsonObject.list.temp + '&deg;F'
-            document.querySelector('#thu').innerHTML = + jsonObject.list.temp + '&deg;F'
-            document.querySelector('#fri').innerHTML = + jsonObject.list.temp + '&deg;F'
-            document.querySelector('#sat').innerHTML = + jsonObject.list.temp + '&deg;F'
-            document.querySelector('#sun').innerHTML = + jsonObject.list.temp + '&deg;F'
-
+        console.log(jsonObject.list[0].dt_txt);
+        let date = new Date(jsonObject.list[0].dt_txt);
+        let time = date.getHours()
+        console.log(time);
+        // for (let i = 0; i< jsonObject.list.length; i++){
+        //     let date = new Date(jsonObject.list[i].dt_text);
+        //     console.log(date.getTime());
+        //     if (date.getTime() == 18: 00: 00)
+        // document.querySelector('#wed').innerHTML = +jsonObject.list[0].main.temp + '&deg;F'
+        // document.querySelector('#thu').innerHTML = +jsonObject.list[8].main.temp + '&deg;F'
+        // document.querySelector('#fri').innerHTML = +jsonObject.list[12].main.temp + '&deg;F'
+        // document.quer)ySelector('#sat').innerHTML = +jsonObject.list[20].main.temp + '&deg;F'
+        // document.querySelector('#sun').innerHTML = +jsonObject.list[24].main.temp + '&deg;F'
+        // }
         let iconPath = "https://openweathermap.org/weather-conditions"
     })
     .catch(err => {

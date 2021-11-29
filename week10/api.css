@@ -15,6 +15,50 @@ table{
     width:100%;
 }
 
+section {
+    margin: 0 auto;
+    background-color: #6B97B3;
+    color: black;
+    flex-direction: column;
+    border-style: solid;
+    padding: 1em;
+    width: 100%;
+}
+
+
+/*[title ~= Name] looks for atributes on the page */
+
+.pancake {
+    background-color: rgb(223, 191, 48);
+    padding: .2em;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    display: none;
+}
+
+.friday {
+    display: block;
+}
+
+/*Text*/
+h1 {
+    font-family: 'Patua one', serif;
+    text-align: left;
+    color: black;
+}
+
+h4 {
+    color: black;
+    text-align: left;
+}
+
+
+
+.title {
+    text-align: left;
+}
+
 /* centered and sized*/
 #logo {
     display: block;
@@ -23,20 +67,30 @@ table{
     padding: .3em;
 }
 
-section {
-    margin: 0 auto;
-    background-color: #6B97B3;
-    color: black;
-    flex-direction: column;
-    border-style: solid;
-    width: 45%;
-    padding: 1em;
+.summary {
+    position: relative
+}
 
+#weathersummary {
+    position: absolute;
+    top: .5em;
+    left: .5em;
+    width: 30%;
+    height: 75%;
+    padding: .5em;
+}
+
+#hero {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 body {
     background-color: #FFF8EB;
     font-family: 'Patua One', serif;
+
+
 }
 
 header {
@@ -44,10 +98,8 @@ header {
 }
 
 main {
-    text-align: center;
     margin: 0 auto;
-    justify-content: space-around;
-    align-content: space-around;
+    width: 80%;
 }
 
 footer {
@@ -56,6 +108,53 @@ footer {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     color: #FFF8EB;
+}
+
+#contact {
+    width: 95%;
+    align-items: center;
+    text-align: left;
+
+}
+#title img{
+    width: 4%;
+}
+
+#map{
+    width:25%;
+    padding: 1em;
+    float:left;
+}
+#article{
+    padding: 1em;
+}
+
+#napoleon {
+    width: 35%;
+    padding:.5em;
+    float: right;
+}
+
+.text {
+    text-align: justify;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+#forecast {
+    display: block;
+}
+
+div .day {
+    height: 5em;
+    width: 5em;
+    background-color:#6B97B3;
+}
+div .day img{
+    width: 100%;
 }
 
 
@@ -95,4 +194,73 @@ a {
 
 .head {
     padding: .5em;
+}
+
+#preston #navigation a[title~=preston],
+#soda #navigation a[title~=soda],
+#fish #navigation a[title~=fish],
+#storm #navigation a[title~=storm] {
+    background-color: #6B97B3;
+}
+
+
+
+
+/* Love, Hate, link, visited, hover, focus, active */
+
+
+
+/* smaller* media query makes the nav,
+block javaScript is what triggers the hamburger */
+@media screen and (max-width: 32.5em) {
+    .navigation {
+        display: block;
+    }
+
+    .navigation li:first-child {
+        display: block;
+        text-align: center;
+    }
+
+    .navigation li {
+        display: none;
+        flex: 1 1 100%;
+    }
+
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    nav.responsive ul.navigation li {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    /*Hides five day forecast in mobile view*/
+    #forecast {
+        display: none;
+    }
+
+
+    #weathersummary {
+        position: relative;
+        width: 90%;
+    }
+    #napoleon {
+        width: 100%;
+    }
+    #contact{
+        width: 100%;
+        margin: 0 auto;
+    }
+    #contact #map {
+        margin: 0 auto;
+        width: 90%;
+    }
+    #title{
+        padding: .5em;
+    }
+
 }
