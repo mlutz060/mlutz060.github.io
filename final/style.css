@@ -85,7 +85,6 @@ h1 {
 /*City page*/
 .city{
     width: 50%;
-    float: right;
 }
 #achievements{
    display: block;
@@ -178,7 +177,6 @@ input{
     }
     #ad{
         position: relative;
-        float: left;
     }
     #contact{
         display: grid;
@@ -200,7 +198,7 @@ input{
     #join{
         width: 50%;
         position: relative;
-        float: right;
+ 
     }
 
 
