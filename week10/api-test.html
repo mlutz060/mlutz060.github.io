@@ -1,32 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+<!--<noscript></noscript-->
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Preston Idaho Weather</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/week10/api.css">
     <link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/week10/api.css">
 </head>
 
-<body>
-
+<body id="preston">
     <header>
         <div class="head">
             <img id="logo" src="../pictures/weather/logo.png" alt="logo">
             <h1>Weathering The Storm</h1>
             <h4>Getting you safely through the trip</h4>
-            <noscript>JavaScript is needed to enhance the website.</noscript>
         </div>
         <nav class="topnav" id="myTopnav">
             <ul class="navigation">
-                <!--The onclick= is similar to adding an eventListener in javaScript
-                   You still have to include more JS to get the button to toggle though
-                   and you have to make sure that the place you're trying to make interactive
-                   is very easy to reference with ID's and Classes-->
                 <li><a class="icon" href="#" onclick="toggleMenu()"> &#9776; Menu</a></li>
                 <li><a href="../index.html">Portal Page</a></li>
                 <li><a>Soda Springs</a></li>
@@ -38,14 +32,14 @@
     </header>
     <main>
         <h2 class="title">Preston</h2>
-        <section>
-            <div class="summary">
-                <picture class="hero">
-                    <source type="image/jpg" srcset="../pictures/week6/hero1400w.jpg" media="screen and (min-width:1200px)">
-                    <source type="image/jpg" srcset="../pictures/week6/hero950w.jpg" media="screen and (min-width:700px)">
-                    <source type="image/jpg" srcset="../pictures/week6/hero400w.jpg">
-                    <img id='hero' src="/pictures/week6/hero400w.jpg" alt="sunny sky, mountains, trees">
-                </picture>
+        <!-- Lorem + a number will give you fake text to fill a space-->
+        <div class="summary">
+            <picture class="hero">
+                <source type="image/jpg" srcset="../pictures/week6/hero1400w.jpg" media="screen and (min-width:1200px)">
+                <source type="image/jpg" srcset="../pictures/week6/hero950w.jpg" media="screen and (min-width:700px)">
+                <source type="image/jpg" srcset="../pictures/week6/hero400w.jpg">
+                <img id='hero' src="/pictures/week6/hero400w.jpg" alt="sunny sky, mountains, trees">
+            </picture>
             <h2>Weather Summary</h2>
             <div id="summary">
                 <p id="current"></p>
@@ -54,7 +48,9 @@
                 <p id="humidity"></p>
                 <p id="windspeed"></p>
             </div>
-        </section>
+
+        </div>
+
         <br>
         <h2>5 Day Forecast</h2>
         <section id="forecast">
@@ -93,7 +89,6 @@
         </section>
         <br>
     </main>
-    <br>
     <section id="contact">
         <img id="map" src="/pictures/map.jpg" alt="map of preston">
         <div id="title">
@@ -113,7 +108,7 @@
             BYU-Idaho <span id="date"></span>
         </div>
     </footer>
-    <script src="./weather.js"></script>
+    <script src="/week10/weather.js"></script>
 </body>
 
 </html>

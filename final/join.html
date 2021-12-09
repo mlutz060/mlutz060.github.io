@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dayton Area Commerce</title>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/final/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Dayton </h1>
+        <h4> Area Chamber of Commerce </h4>
+        <nav>
+            <ul>
+                <li id="index"><a href="/final/index.html">Home</a></li>
+                <li id="city"><a href="/final/city.html">City</a></li>
+                <li id="directory"><a href="/final/directory.html">Directory</a></li>
+                <li id="join"><a href="/final/join.html">Join</a></li>
+                <li id="contact"><a href="/final/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="form" method="get" action="/final/thanks.html">
+            <h2>Join Us!</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur
+                adipisicing elit. Vitae cumque accusantium omnis
+                culpa dolor, quam, nisi nostrum, blanditiis at
+                placeat tempore fugit voluptas eius quos eligendi
+                odio incidunt. Blanditiis, cupiditate?</p>
+
+            <form method="get" action="/final/thanks.html">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <div><label for="name">First Name</label></div>
+                    <input type="text" id="fname" name="name" pattern="[a-zA-Z] {5}" placeholder="John">
+                    <div><label for="name">Last Name</label></div>
+                    <input type="text" id="lname" name="name" pattern="[a-zA-Z] {5}" placeholder="Smith">
+                    <div><label for="title">Job Title</label></div>
+                    <input type="text" id="title" name="title" pattern="[a-zA-Z] {5}" placeholder="CEO">
+                    <div><label for="email">Email</label></div>
+                    <input type="email" id="email" name="email" placeholder="abcd@1234.com">
+                    <div><label for="phone">Phone Number</label></div>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9] {10}" placeholder="123-456-7890">
+                </fieldset>
+                <fieldset>
+                    <legend>Business Information</legend>
+                <div><label for="buisness"></label></div>
+                <input type="text" id="bname" name="buisness" pattern="[a-zA-Z] " placeholder="Walmart Superstore">
+                ADDRESS
+                <div><label for="website">Web Adress</label></div>
+                <input type="url" id="website" name="website" placeholder="www.thiswebsite.com">
+                <div><label for="description">Description</label></div>
+                <input type="text" id="description" name="description"
+                    placeholder="Our company is a small business providing...">
+                </fieldset>
+                <div><label for="level"></label></div>
+                <fieldset>
+                    <legend>Membership Level</legend>
+                <select name="level" id="level">
+                    <option value="Choose an option">Choose one of the below</option>
+                    <option value="non-profit">Non-Profit ($100)</option>
+                    <option value="bronze">Bronze ($200)</option>
+                    <option value="silver">Silver ($400)</option>
+                    <option value="gold">Gold ($1000)</option>
+                </select>
+                </fieldset>
+                <input type="submit" value="Join With Chosen Subscription" id="submit">
+            </form>
+        </section>
+
+    </main>
+    <footer>
+        <h2>Dayton Area Chamber of Commerce</h2>
+        <p>8 N. Main Street | Suite 100 | Dayton, Ohio 45402-1904 | (937) 226-1444</p>
+        <span id="date"></span>
+        <br>
+        <img class="logo" src="/final/images/fblogo.png" alt="facebook logo">
+        <img class="logo" src="/final/images/iglogo.png" alt="instagram logo">
+        <img class="logo" src="/final/images/tweetlogo.png" alt="twitter logo">
+        <img class="logo" src="/final/images/ytlogo.png" alt="youtube logo">
+        <script src="/final/javascript.js"></script>
+    </footer>
+</body>
+
+</html>

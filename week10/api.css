@@ -4,7 +4,7 @@ h1 {
     color: black;
 }
 h2{
-    text-align: center;
+    text-align: left;
 }
 
 h4 {
@@ -68,7 +68,14 @@ h4 {
 }
 
 .summary {
-    position: relative
+    position: relative;
+    margin: 0 auto;
+    background-color: #6B97B3;
+    color: black;
+    flex-direction: column;
+    border-style: solid;
+    padding: 1em;
+    width: 100%;
 }
 
 #weathersummary {

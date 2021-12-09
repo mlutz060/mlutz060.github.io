@@ -63,12 +63,27 @@ fetch(fiveDay)
         }
         throw new ERROR('Network response was not okay');
     })
-    .then(function (jsonObject) {
-        console.log(jsonObject);
-        console.log(jsonObject.list[0].dt_txt);
-        let date = new Date(jsonObject.list[0].dt_txt);
-        let time = date.getHours()
-        console.log(time);
+    .then(data =>{
+        console.log(data);
+        var dayIndex = new Date().getDay() + 1;
+        var weekdayForecast = new Array(
+            "Sun",
+            "Mon",
+            "Tues",
+            "Wed",
+            "Thurs",
+            "Fri",
+            "Sat",
+        );
+        var forecastIndex = 6;
+        for (i=0; i<5; i++){
+            
+
+            let dayForcast = weekdayForecast[dayIndex]
+            let forecast = document.querySelector("#forecast")
+            
+        }
+    }
         // for (let i = 0; i< jsonObject.list.length; i++){
         //     let date = new Date(jsonObject.list[i].dt_text);
         //     console.log(date.getTime());
