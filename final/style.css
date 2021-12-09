@@ -13,7 +13,7 @@ header{
 ul{
     list-style-type: none;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-evenly;
 }
 li{
     height: max-content;
@@ -85,6 +85,7 @@ h1 {
 /*City page*/
 .city{
     width: 50%;
+    float: right;
 }
 #achievements{
    display: block;
@@ -107,7 +108,7 @@ h1 {
 }
 
 #event{
-    display: flexbox;
+    display: flex;
     justify-content:space-around
 }
 .fill{
@@ -124,18 +125,24 @@ input{
     padding-bottom: .5em;
 }
 #ad{
-    width: 80%;
+    width: 100%;
 }
 /*size small*/
 
 /*Media Query*/
 /*Medium*/
 @media only screen and (min-width: 480px){
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
     .topnav ul li:first-child{
         display: none;
     }
     #ad{
-        width: 30%;
+        width: 80%;
+        grid-column: 1/2;
     }
     #ad img{
         width:100%;
@@ -172,11 +179,13 @@ input{
 }
 /*Large*/
 @media only screen and (min-width:780px){
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
     .topnav ul li:first-child{
         display: none;
-    }
-    #ad{
-        position: relative;
     }
     #contact{
         display: grid;
@@ -196,15 +205,20 @@ input{
         width:100%;
     }
     #join{
-        width: 50%;
-        position: relative;
- 
+        width: 60%;
+        grid-column: 2/2; 
+        grid-row: 1/1;
     }
 
 
 }
 /*Extra-Large*/
 @media only screen and (min-width: 1080px){
+    #wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 1em;
+    }
     .topnav ul li:first-child{
         display: none;
     }
