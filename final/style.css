@@ -52,7 +52,7 @@ footer{
 footer p{
     margin: auto;
 }
-.logo{
+.media{
     width: 20%;
 }
 
@@ -172,9 +172,12 @@ input{
     .three{
         grid-column: 3/4;
     }
-    .logo{
+    .media{
         width:5em;
         padding: 1em;
+    }
+    .logo{
+        width:100%
     }
 }
 /*Large*/
@@ -209,7 +212,10 @@ input{
         grid-column: 2/2; 
         grid-row: 1/1;
     }
+    .logo{
+        width:100%
 
+    }
 
 }
 /*Extra-Large*/
@@ -238,5 +244,9 @@ input{
     }
     .one{
         grid-column: 1/4;
+    }
+    .logo{
+        width:100%
+
     }
 }
